@@ -25,13 +25,13 @@ export default function Home(){
   }, [])
 
   return (
-    <div className="row container-fluid sm-6">
+    <div className="row container-fluid">
     {games.map( g => 
-      <div key={g.id} className="col-6 col-sm-3">
-      <GameItem id={g.id} title={g.title} thumbnail={g.thumbnail}
-        description={g.short_description} url={g.game_url} genre={g.genre} 
-        platform={g.platform} release_date={g.release_date} 
-      />
+      <div key={g.id} className="col-sm-3">
+        <GameItem id={g.id} title={g.title} thumbnail={g.thumbnail}
+          description={g.short_description} url={g.game_url} genre={g.genre} 
+          platform={g.platform} release_date={g.release_date} 
+        />
       </div>
     )}
     </div>
