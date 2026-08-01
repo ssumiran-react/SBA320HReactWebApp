@@ -122,3 +122,27 @@ Consider framing your project around a problem. For example, maybe the problem i
 MDN Javascript Docs
 React Docs
 GitHub Pages
+
+https://playgama.com/
+https://www.crazygames.com/
+
+Endpoints & Examples
+Live games list
+GET https://www.freetogame.com/api/games
+Games by platform
+GET https://www.freetogame.com/api/games?platform=windows
+Insert platform, eg: windows, browser or all
+Games by category or tag
+GET https://www.freetogame.com/api/games?category=shooter
+Insert game category or tag, eg: mmorpg, shooter, pvp, mmofps and more.
+Sort games by release date, alphabetical or relevance
+GET https://www.freetogame.com/api/games?sort-by=alphabetical
+Insert sort by, eg: release-date, popularity, alphabetical or relevance
+Games by platform & category & sorted
+GET https://www.freetogame.com/api/games?platform=browser&category=mmorpg&sort-by=release-date
+Filter Games by multiple tags for personalized results
+GET https://www.freetogame.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=windows
+Insert tag, eg: mmorpg, shooter, pvp, mmofps and more. Optionally you can also use the "platform" and "sort" parameters
+Return details from a specific game
+GET https://www.freetogame.com/api/game?id=452
+Insert game id
