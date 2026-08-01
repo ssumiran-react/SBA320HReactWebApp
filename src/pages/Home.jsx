@@ -25,9 +25,9 @@ export default function Home(){
   }, [])
 
   return (
-    <div className="container-fluid mb-6 md-3">
+    <div className="row container-fluid sm-6">
     {games.map( g => 
-      <div key={g.id}>
+      <div key={g.id} className="col-6 col-sm-3">
       <GameItem id={g.id} title={g.title} thumbnail={g.thumbnail}
         description={g.short_description} url={g.game_url} genre={g.genre} 
         platform={g.platform} release_date={g.release_date} 

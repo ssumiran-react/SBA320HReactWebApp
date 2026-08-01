@@ -46,10 +46,14 @@ li a {
   border-radius: 5px; /* Rounded corners */
   background-color: #4CAF50;
   padding: 16px;
-}
-
-card:hover {
+  width: 300px;
+  height: 200px;
+.card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cardImg {
+  width: 300px;
+  height: 200px;
 }
 
 
