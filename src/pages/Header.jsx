@@ -1,15 +1,19 @@
+// import { Link } from "react-router-dom";
 
-export default function Header(){
+export default function Header() {
 
-    return (
-      <>
+  return (
+    <>
       <nav className="navbar" aria-label="Main Navigation" role="navigation">
-      <div className="nav-container">
-        <ul className="nav-menu">
-          <li className="nav-item"><a href="/womens" className="nav-link">Home</a></li>
-        </ul>
-      </div>
+        <div className="nav-container">
+          <ul className="nav-menu">
+            <li className="nav-item">
+              {/* <Link to="/"><div>Home</div></Link> */}
+            </li>
+
+          </ul>
+        </div>
       </nav>
-      </>
-    )
+    </>
+  )
 }

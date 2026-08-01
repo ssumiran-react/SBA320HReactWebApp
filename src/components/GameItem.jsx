@@ -7,7 +7,7 @@ export default function GameItem(g) {  //console.log("In-GameItem", g.id)
         <img className="img-fluid rounded" src={g.thumbnail} alt={g.title} />
       </div>
       <div >
-        <h6><b>{g.title}</b></h6>
+        <h6 className="text-center"><b>{g.title}</b></h6>
         <p hidden={true}>{g.description}</p>
       </div>
     </div>

@@ -25,9 +25,10 @@ export default function Home(){
   }, [])
 
   return (
-    <div className="row container-fluid">
+    <div className="row container-fluid pe-0" >
+      {/* // style={{paddingLeft:"10px", paddingRight:"0px"}}> */}
     {games.map( g => 
-      <div key={g.id} className="col-sm-3">
+      <div key={g.id} className="col-sm-2 " style={{padding:"2px"}}>
         <GameItem id={g.id} title={g.title} thumbnail={g.thumbnail}
           description={g.short_description} url={g.game_url} genre={g.genre} 
           platform={g.platform} release_date={g.release_date} 
@@ -44,7 +45,7 @@ game_url: "https://www.freetogame.com/open/overwatch"
 genre: "Shooter"
 id: 540
 platform: "PC (Windows)"
-publisher: "Activision Blizzard"
+publisher: "Activision Blizzard" 
 release_date: "2022-10-04"
 short_description
 : 

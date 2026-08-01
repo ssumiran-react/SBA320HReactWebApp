@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {Route, Routes} from "react-router-dom";
 import './App.css'
 import Home from './pages/Home'
 import Header from './pages/Header'
@@ -12,7 +13,10 @@ function App() {  //console.log("inApp");
   return (
     <>
     <Header />
-    <Home />
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="" element={<Home/>}/>
+    </Routes>
     <Footer />
     </>
   )
