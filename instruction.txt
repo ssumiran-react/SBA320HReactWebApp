@@ -123,8 +123,6 @@ MDN Javascript Docs
 React Docs
 GitHub Pages
 
-https://playgama.com/
-https://www.crazygames.com/
 
 Endpoints & Examples
 Live games list
